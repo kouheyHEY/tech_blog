@@ -30,13 +30,18 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/image/logo_main_triming.png" alt="むりこクリエイション">
             </a>
         </div>
+            <button id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         <div id="header-nav">
             <ul>
-                <li class="header-nav-item"><a href="<?php echo home_url(); ?>">トップ</a></li>
-                <li class="header-nav-item"><a href="<?php echo home_url(); ?>/game">ゲーム開発</a></li>
-                <li class="header-nav-item"><a href="<?php echo home_url(); ?>/web">Web開発</a></li>
-                <li class="header-nav-item"><a href="<?php echo home_url(); ?>/other">その他開発</a></li>
-                <li class="header-nav-item"><a href="<?php echo home_url(); ?>/diary">開発日記</a></li>
+                <li class="header-nav-item round-corner-box"><a href="<?php echo home_url(); ?>">トップ</a></li>
+                <li class="header-nav-item round-corner-box"><a href="<?php echo home_url(); ?>/game">ゲーム開発</a></li>
+                <li class="header-nav-item round-corner-box"><a href="<?php echo home_url(); ?>/web">Web開発</a></li>
+                <li class="header-nav-item round-corner-box"><a href="<?php echo home_url(); ?>/other">その他開発</a></li>
+                <li class="header-nav-item round-corner-box"><a href="<?php echo home_url(); ?>/diary">開発日記</a></li>
             </ul>
         </div>
     </header>

@@ -3,12 +3,14 @@
 <main>
     <div id="main-category-block">
         <div class="category-title">
-            <h2>最新記事</h2>
+            <h2><?php single_cat_title(); ?></h2>
         </div>
         <?php
+        $category = get_queried_object();
         $args = array(
             'post_type' => 'post',
             'posts_per_page' => 10,
+            'cat' => $category->term_id
         );
         $query = new WP_Query($args);
         if ($query->have_posts()) : ?>
@@ -25,7 +27,7 @@
             </ul>
         <?php else : ?>
             <div id="no-article">
-                <span class="article-list-item-title">記事が見つかりませんでした。</span>
+                <span class="article-list-item-title">このカテゴリーには記事がありません。</span>
             </div>
         <?php endif; ?>
     </div>

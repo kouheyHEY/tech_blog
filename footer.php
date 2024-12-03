@@ -32,6 +32,9 @@
         </div>
     </footer>
     <?php wp_footer(); ?>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- スクリプト -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/header.js"></script>
 </body>
 </html>

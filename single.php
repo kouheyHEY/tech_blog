@@ -4,7 +4,7 @@
     <?php if (have_posts()) :
         while (have_posts()) :
             the_post(); ?>
-            <div id="main-category-block">
+            <div id="main-category-block article-detail">
                 <div class="category-title">
                     <h2><?php the_title(); ?></h2>
                 </div>
