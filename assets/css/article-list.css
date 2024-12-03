@@ -1,0 +1,41 @@
+#main-article-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.article-list-item {
+    margin: 15px 10px;
+    transition: all var(--animation-time-03) ease-out;
+
+    & a {
+        width: 100%;
+        padding: 10px 15px;
+        color: var(--color-white);
+        display: block;
+        text-decoration: none;
+
+        & span {
+            display: block;
+        }
+
+        & .article-list-item-title {
+            padding: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        & .article-list-item-date {
+            padding: 5px 0 10px;
+            font-size: 1rem;
+        }
+    }
+}
+
+/* ホバー時に小さくするアニメーション */
+.article-list-item:hover {
+    color: var(--color-blue-black-3);
+    background-color: var(--color-blue-black-4);
+    box-shadow: 0 0 20px var(--color-blue-black-4);
+    scale: 0.95;
+}

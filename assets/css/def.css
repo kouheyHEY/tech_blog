@@ -1,0 +1,86 @@
+/* 共通の変数定義などのCSS */
+
+:root {
+    /* 黒系 */
+    --color-black: #000000;
+    --color-black-light-1: #1e1e1e;
+    /* 青系 */
+    --color-blue-black-1: #1e0033;
+    --color-blue-black-2: #3c0066;
+    --color-blue-black-3: #590099;
+    --color-blue-black-4: #7700cc;
+    --color-blue-1: #7a63ff;
+    /* 白系 */
+    --color-white-light: #faebd7;
+    --color-white: #ffffff;
+
+    /* SNSカラー */
+    --color-sns-X: #000000;
+    --color-sns-facebook: #0866FF;
+    --color-sns-instagram-1: #741AFA;
+    --color-sns-instagram-2: #FF30C4;
+    --color-sns-instagram-3: #FF5D21;
+    --color-sns-instagram-4: #FFD735;
+    --color-sns-youtube: #FF0000;
+    --color-sns-tiktok: #080404;
+    --color-sns-line: #00C84A;
+    --color-sns-linkedin: #0A66C2;
+
+    /* アニメーション時の秒数 */
+    --animation-time-02: 0.2s;
+    --animation-time-03: 0.3s;
+    --animation-time-04: 0.4s;
+    --animation-time-05: 0.5s;
+    --animation-time-06: 0.6s;
+    --animation-time-07: 0.7s;
+    --animation-time-08: 0.8s;
+    --animation-time-09: 0.9s;
+    --animation-time-10: 1s;
+    --animation-time-11: 1.1s;
+    --animation-time-12: 1.2s;
+    --animation-time-13: 1.3s;
+    --animation-time-14: 1.4s;
+    --animation-time-15: 1.5s;
+    --animation-time-16: 1.6s;
+    --animation-time-17: 1.7s;
+    --animation-time-18: 1.8s;
+    --animation-time-19: 1.9s;
+    --animation-time-20: 2s;
+    --animation-time-21: 2.1s;
+    --animation-time-22: 2.2s;
+    --animation-time-23: 2.3s;
+    --animation-time-24: 2.4s;
+    --animation-time-25: 2.5s;
+    --animation-time-26: 2.6s;
+    --animation-time-27: 2.7s;
+    --animation-time-28: 2.8s;
+    --animation-time-29: 2.9s;
+    --animation-time-30: 3s;
+}
+
+/* フォント */
+@font-face {
+    font-family: 'Corporate_Regular';
+    src: url('../fonts/Corporate-Logo-Medium-ver3.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Corporate_Bold';
+    src: url('../fonts/Corporate-Logo-Bold-ver3.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'LogoTypeG_R';
+    src: url('../fonts/LogotypeGothic-Regular.otf') format('opentype');
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

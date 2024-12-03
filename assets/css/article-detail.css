@@ -1,0 +1,12 @@
+.article-info-block {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.article-text-block {
+    padding: 10px 30px;
+
+    & p {
+        margin: 10px 0;
+    }
+}

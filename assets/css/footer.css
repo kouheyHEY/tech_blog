@@ -1,0 +1,122 @@
+footer {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 0;
+}
+
+#footer-logo {
+    width: 100%;
+    /* マージン */
+    margin: 0 auto;
+    /* テキスト中央揃え */
+    text-align: center;
+
+    & img {
+        width: 50%;
+        /* マージン */
+        margin: 0 auto;
+    }
+}
+
+/* フッターSNSボタン */
+.round-corner-box-sns {
+    /* 色 */
+    background-color: var(--color-blue-black-3);
+    /* フレックス */
+    display: flex;
+    /* 角丸 */
+    border-radius: 10px;
+    /* ボーダーの色 */
+    border: 2px solid var(--color-white);
+    /* ボックスサイズ */
+    box-sizing: border-box;
+}
+
+/* フッター SNS */
+#footer-sns {
+    & ul {
+        /* 幅 */
+        width: 80%;
+        /* マージン */
+        margin: 0 auto;
+        /* パディング */
+        padding: 40px 10px 10px;
+        /* スタイル */
+        list-style: none;
+        display: flex;
+        /* 中央揃え */
+        justify-content: center;
+
+        & li {
+            /* 幅 */
+            width: 15%;
+            min-width: 20%;
+            /* マージン */
+            margin: 10px;
+            /* ディスプレイ */
+            display: table;
+
+            /* アニメーション */
+            transition: all var(--animation-time-03) ease-out;
+
+            /* ホバー時に小さくする */
+            &:hover {
+                scale: 0.9;
+            }
+
+            & a {
+                /* 要素いっぱいに広げる */
+                width: 100%;
+                height: 100%;
+                /* パディング */
+                padding: 10px;
+                /* 色 */
+                color: var(--color-white);
+                /* フォント */
+                font-family: 'LogoTypeG_R';
+                /* ディスプレイ */
+                display: table-cell;
+                /* 左右中央揃え */
+                text-align: center;
+                /* 垂直中央揃え */
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+#footer-copyright {
+    font-size: 1.5rem;
+}
+
+#footer-sns-x {
+    background-color: var(--color-sns-X);
+}
+
+#footer-sns-facebook {
+    background-color: var(--color-sns-facebook);
+}
+
+#footer-sns-instagram {
+    /* グラデーション 左上から右下 */
+    background: linear-gradient(to bottom right,
+            var(--color-sns-instagram-1),
+            var(--color-sns-instagram-2),
+            var(--color-sns-instagram-3),
+            var(--color-sns-instagram-4));
+}
+
+#footer-sns-youtube {
+    background-color: var(--color-sns-youtube);
+}
+
+/* フッター著作権 */
+#footer-copyright {
+    text-align: center;
+    font-size: 1.0rem;
+
+    & span {
+        /* フォント */
+        font-family: initial;
+    }
+}
