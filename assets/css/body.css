@@ -191,7 +191,7 @@ main {
 
 @media (max-width: 1280px) {
     main {
-        width: 90%;
+        width: 95%;
     }
 
     /* タイトル */
@@ -221,7 +221,7 @@ main {
     }
 
     main {
-        width: 95%;
+        width: 100%;
     }
 
     .category-title {

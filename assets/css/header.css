@@ -48,7 +48,8 @@ header {
     & ul {
         width: 80%;
         margin: 0 auto;
-        padding: 10px;
+        padding: 0;
+        padding-bottom: 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -92,7 +93,7 @@ header {
     }
 
     #header-nav ul {
-        width: 90%;
+        width: 95%;
 
         & li {
             width: calc(100% / 3 - 20px);
@@ -102,6 +103,7 @@ header {
 
 /* メディアクエリ 768px以下 スマートフォン */
 @media (max-width: 768px) {
+
     #header-logo {
         height: 220px;
 
@@ -176,6 +178,7 @@ header {
 
     #header-nav ul {
         width: 100%;
+        padding: 10px;
         flex-direction: column;
     }
 
@@ -189,7 +192,7 @@ header {
 /* メディアクエリ 480px以下 スマートフォン */
 @media (max-width: 480px) {
     header {
-        width: 95%;
+        width: 100%;
     }
 
     #header-logo {

@@ -5,8 +5,8 @@
 
 /* 記事本文 */
 .article-text-block {
-    margin: 20px;
-    padding: 10px;
+    margin: 20px 10px;
+    padding: 0px;
 
     /* 角丸 */
     border-radius: 10px;
@@ -17,7 +17,7 @@
     /* パラグラフと画像のマージン */
     & p,
     & figure {
-        margin: 20px 10px;
+        padding: 10px;
     }
 }
 
@@ -36,7 +36,8 @@
         /* マージン */
         margin: 0 auto;
         /* パディング */
-        padding: 0 10px 10px;
+        padding: 0;
+        padding-bottom: 10px;
         /* スタイル */
         list-style: none;
         display: flex;
