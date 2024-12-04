@@ -3,7 +3,7 @@
 <main>
     <div id="main-category-block">
         <div class="category-title">
-            <h2><?php single_cat_title(); ?></h2>
+            <p><?php single_cat_title(); ?></p>
         </div>
         <?php
         $category = get_queried_object();

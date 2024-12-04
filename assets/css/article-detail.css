@@ -21,6 +21,7 @@
     }
 }
 
+/* SNSシェアボタン */
 .article-share-block {
     /* パディング */
     padding: 20px 0;
@@ -39,12 +40,13 @@
         /* スタイル */
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         /* 中央揃え */
-        justify-content: center;
+        justify-content: flex-start;
 
         & li {
             /* 幅 */
-            width: calc(100% / 3 - 20px);
+            width: calc(100% / 4 - 20px);
             /* マージン */
             margin: 10px;
             /* ディスプレイ */
@@ -99,4 +101,10 @@
         background-color: var(--color-sns-line);
     }
 
+}
+
+@media (max-width: 768px) {
+    .article-share-block ul li {
+        width: calc(100% / 2 - 20px);
+    }
 }

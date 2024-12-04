@@ -25,18 +25,20 @@
         <?php endwhile;
     endif; ?>
 
-    <div id="article-link-block-container">
+    <!-- 前後の記事へのリンク -->
+    <?php if (get_previous_post() || get_next_post()) : ?>
+        <div id="article-link-block-container">
+            <!-- 前の記事へのリンク -->
+            <div class="round-corner-box article-link-block <?php if (!get_previous_post()) echo 'hidden'; ?>" id="previous-article-link">
+                <?php previous_post_link('%link', '%title'); ?>
+            </div>
 
-        <!-- 前の記事へのリンク -->
-        <div class="round-corner-box article-link-block <?php if (!get_previous_post()) echo 'hidden'; ?>" id="previous-article-link">
-            <?php previous_post_link('%link', '%title'); ?>
+            <!-- 次の記事へのリンク -->
+            <div class="round-corner-box article-link-block <?php if (!get_next_post()) echo 'hidden'; ?>" id="next-article-link">
+                <?php next_post_link('%link', '%title'); ?>
+            </div>
         </div>
-
-        <!-- 次の記事へのリンク -->
-        <div class="round-corner-box article-link-block <?php if (!get_next_post()) echo 'hidden'; ?>" id="next-article-link">
-            <?php next_post_link('%link', '%title'); ?>
-        </div>
-    </div>
+    <?php endif; ?>
 
     <!-- 戻るボタン -->
     <div class="round-corner-box" id="back-button">
