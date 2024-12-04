@@ -3,7 +3,7 @@
 <main>
     <div id="main-category-block">
         <div class="category-title">
-            <h2>最新記事</h2>
+            <p>最新記事</p>
         </div>
         <?php
         $args = array(

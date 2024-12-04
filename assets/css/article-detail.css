@@ -3,10 +3,100 @@
     text-align: left;
 }
 
+/* 記事本文 */
 .article-text-block {
-    padding: 10px 30px;
+    margin: 20px;
+    padding: 10px;
+
+    /* 角丸 */
+    border-radius: 10px;
+
+    /* 背景色 */
+    background-color: var(--color-blue-black-2);
+
+    /* パラグラフと画像のマージン */
+    & p,
+    & figure {
+        margin: 20px 10px;
+    }
+}
+
+.article-share-block {
+    /* パディング */
+    padding: 20px 0;
 
     & p {
-        margin: 10px 0;
+        padding: 5px 10px;
     }
+
+    & ul {
+        /* 幅 */
+        width: 100%;
+        /* マージン */
+        margin: 0 auto;
+        /* パディング */
+        padding: 0 10px 10px;
+        /* スタイル */
+        list-style: none;
+        display: flex;
+        /* 中央揃え */
+        justify-content: center;
+
+        & li {
+            /* 幅 */
+            width: calc(100% / 3 - 20px);
+            /* マージン */
+            margin: 10px;
+            /* ディスプレイ */
+            display: table;
+
+            /* アニメーション */
+            transition: all var(--animation-time-03) ease-out;
+
+            /* ホバー時に小さくする */
+            &:hover {
+                scale: 0.9;
+            }
+
+            & a {
+                /* 要素いっぱいに広げる */
+                width: 100%;
+                height: 100%;
+                /* パディング */
+                padding: 10px;
+                /* 色 */
+                color: var(--color-white);
+                /* フォント */
+                font-family: 'LogoTypeG_R';
+                /* ディスプレイ */
+                display: table-cell;
+                /* 左右中央揃え */
+                text-align: center;
+                /* 垂直中央揃え */
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .share-sns-x {
+        background-color: var(--color-sns-X);
+    }
+
+    .share-sns-facebook {
+        background-color: var(--color-sns-facebook);
+    }
+
+    .share-sns-instagram {
+        /* グラデーション 左上から右下 */
+        background: linear-gradient(to bottom right,
+                var(--color-sns-instagram-1),
+                var(--color-sns-instagram-2),
+                var(--color-sns-instagram-3),
+                var(--color-sns-instagram-4));
+    }
+
+    .share-sns-line {
+        background-color: var(--color-sns-line);
+    }
+
 }

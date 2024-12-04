@@ -70,7 +70,7 @@ main {
     padding: 10px;
     /* フォント */
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--color-white);
 }
 
@@ -83,21 +83,17 @@ main {
     }
 }
 
-/* サブタイトル */
-.sub-title {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
 /* 記事リンクブロックコンテナ */
 #article-link-block-container {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 /* 記事リンクブロック */
 .article-link-block {
-    width: 40%;
+    width: calc(50% - 10px);
+    margin: 10px 0;
     /* 内容を上下中央寄せ */
     display: flex;
     align-items: center;
@@ -191,4 +187,44 @@ main {
 /* 記事がない場合 */
 #no-article {
     margin: 10px;
+}
+
+@media (max-width: 1280px) {
+    main {
+        width: 90%;
+    }
+
+    /* タイトル */
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    #article-link-block-container {
+        flex-direction: column;
+
+        & .article-link-block {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .category-title {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 0.875rem;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .category-title {
+        font-size: 1.125rem;
+    }
 }

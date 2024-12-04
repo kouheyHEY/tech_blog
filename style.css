@@ -9,3 +9,9 @@ License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: my-custom-theme
 */
+
+/* フッターのロゴとSNSボタンは一時的に使用不可 */
+#footer-logo,
+#footer-sns {
+    display: none;
+}
