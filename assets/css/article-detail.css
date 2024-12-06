@@ -102,6 +102,13 @@
         background-color: var(--color-sns-line);
     }
 
+    .share-sns-bluesky {
+        /* 上から下にグラデーション */
+        background: linear-gradient(to bottom,
+                var(--color-sns-bluesky-1),
+                var(--color-sns-bluesky-2));
+    }
+
 }
 
 @media (max-width: 768px) {

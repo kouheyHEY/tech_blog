@@ -25,6 +25,11 @@
                         YouTube
                     </a>
                 </li>
+                <li id="footer-sns-github" class="round-corner-box-sns">
+                    <a href="https://github.com/kouheyHEY" target="_blank">
+                        GitHub
+                    </a>
+                </li>
             </ul>
         </div>
         <div id="footer-copyright">

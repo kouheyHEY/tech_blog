@@ -14,5 +14,8 @@
         <li class="article-share-item round-corner-box-sns share-sns-line">
             <a href="https://line.me/R/msg/text/?<?php the_permalink(); ?>" target="_blank" rel="nofollow noopener noreferrer">LINE</a>
         </li>
+        <li class="article-share-item round-corner-box-sns share-sns-bluesky">
+            <a href="https://bsky.social/notifications/compose?text=<?php the_permalink(); ?>" target="_blank" rel="nofollow noopener noreferrer">Bluesky</a>
+        </li>
     </ul>
 </div>

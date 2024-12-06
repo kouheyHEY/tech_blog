@@ -25,6 +25,9 @@
     --color-sns-tiktok: #080404;
     --color-sns-line: #00C84A;
     --color-sns-linkedin: #0A66C2;
+    --color-sns-bluesky-1: #1281FF;
+    --color-sns-bluesky-2: #58B9FF;
+    --color-sns-github: #24292f;
 
     /* アニメーション時の秒数 */
     --animation-time-02: 0.2s;
